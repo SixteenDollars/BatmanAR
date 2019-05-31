@@ -8,16 +8,13 @@
 
 <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
-    <a-marker-camera type="pattern" url="assets/pattern-marker.patt">
-    
-        <a-entity 
-            obj-model= "obj: url(assets/Batman.obj);
-            mtl: url(assets/Batman.mtl)">
-        </a-entity>
 
-    </a-marker-camera>
-    
-    <a-entity camera></a-entity>
+    <a-marker type="pattern" url="assets/pattern-marker.patt">
+        <a-entity             
+        obj-model= "obj: url(assets/Batman.obj);
+        mtl: url(assets/Batman.mtl)">></a-entity>
+     </a-marker>
+     <a-camera-static/>
     
 </a-scene>
 
